@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indra – Contato</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div id="acess-btn" onclick="toggleAcessMenu()">♿</div>
+  <div id="acess-menu" class="acess-menu hidden">
+    <p>Acessibilidade</p>
+    <button onclick="alterarFonte('+')">Aumentar Texto</button>
+    <button onclick="alterarFonte('-')">Reduzir Texto</button>
+    <button onclick="ativarContraste()">Contraste Alto</button>
+    <button onclick="ativarEscalaCinza()">Escala de Cinza</button>
+    <button onclick="resetarEstilo()">Reiniciar</button>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo-wrapper">
+        <img src="../img/logo.png" alt="Logo da Indra" class="logo" />
+        <span class="logo-text">Indra</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Fale Conosco</h1>
+
+    <form id="contato-form" class="form-contato" enctype="multipart/form-data">
+      <label for="nome">Nome completo *</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem *</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <label for="imagem">Anexar imagem (opcional)</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*" />
+
+      <button type="submit">Enviar</button>
+      <p id="form-msg"></p>
+    </form>
+
+    <hr />
+
+    <h2>Contato de Emergência</h2>
+    <p>Em caso de emergência, entre em contato com a Defesa Civil:</p>
+    <a href="http://www.sic.sp.gov.br" target="_blank">
+      <img src="../img/defesa-civil-logo.png" alt="Logo da Defesa Civil" style="max-width: 200px;" />
+    </a>
+    <p><a href="http://www.sic.sp.gov.br" target="_blank">www.sic.sp.gov.br</a></p>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Indra – Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../main.js"></script>
+  <script src="../validate.js"></script>
+</body>
+</html>

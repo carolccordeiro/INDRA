@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indra – Integrantes</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div id="acess-btn" onclick="toggleAcessMenu()">♿</div>
+  <div id="acess-menu" class="acess-menu hidden">
+    <p>Acessibilidade</p>
+    <button onclick="alterarFonte('+')">Aumentar Texto</button>
+    <button onclick="alterarFonte('-')">Reduzir Texto</button>
+    <button onclick="ativarContraste()">Contraste Alto</button>
+    <button onclick="ativarEscalaCinza()">Escala de Cinza</button>
+    <button onclick="resetarEstilo()">Reiniciar</button>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo-wrapper">
+        <img src="../img/logo.png" alt="Logo da Indra" class="logo" />
+        <span class="logo-text">Indra</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Integrantes</h1>
+    <div class="team-grid">
+      <div class="member-card">
+        <img src="../img/carolina.png" alt="Carolina Cordeiro Silva" />
+        <h3>Carolina Cordeiro Silva</h3>
+        <p>RM: 564234</p>
+        <p>
+          <a href="https://github.com/carolccordeiro" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/carolinacordeirosilva/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="member-card">
+        <img src="../img/lucas.png" alt="Lucas Freitas Ferreira" />
+        <h3>Lucas Freitas Ferreira</h3>
+        <p>RM: 566048</p>
+        <p>
+          <a href="https://github.com/LucasFr308" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/publicfr" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="member-card">
+        <img src="../img/joao.png" alt="João Victor Gomes de Souza" />
+        <h3>João Victor Gomes de Souza</h3>
+        <p>RM: 560907</p>
+        <p>
+          <a href="https://github.com/Jounaxis" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-gomes-de-souza-419432324/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Indra – Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
